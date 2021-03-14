@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">NYTimesMovie</string>
+    <string name="title">NYTimes Movies</string>
+    <string name="name">Name:</string>
+    <string name="summery">Summery:</string>
+    <string name="publish_date">Publish Date:</string>
+</resources>
