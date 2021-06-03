@@ -4,7 +4,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModel
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.nytimesmovie.data.model.Model
 import com.example.nytimesmovie.databinding.ActivityMainBinding
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -25,7 +27,6 @@ class ListMovieActivity : AppCompatActivity() {
         binding.recyclerViewMovie.layoutManager =
             LinearLayoutManager(this)
         binding.recyclerViewMovie.adapter = movieAdapter
-
         viewModel.error.observe(this, Observer {
 
         })
@@ -38,9 +39,6 @@ class ListMovieActivity : AppCompatActivity() {
         viewModel.failure.observe(this, Observer {
 
         })
-
-//        viewModel.getMovies(dateParameter)
-
     }
-
 }
+
